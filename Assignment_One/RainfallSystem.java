@@ -1,12 +1,3 @@
-/**
- * We are tasked with developing a system that tracks the rainfall in a region for a year.
- * The total rainfall for each month is stored in a integer array. January's total rainfall
- * is stored in the first index position of the array, February's total rainfall is in the
- * second index position of the array, etc.  
- * 
- * Because our RainfallTracker will be used by another system, we must use the methods exactly as defined
- * 
- */
 package Rainfall;
 
 import java.util.Scanner;

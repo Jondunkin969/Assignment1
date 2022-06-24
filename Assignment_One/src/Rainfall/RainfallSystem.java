@@ -98,7 +98,7 @@ return sum/MonthData.length;
     public static String highestRainfallMonth() {
         int high= MonthData[0];
         String output=months[0];
-        for(int i=1;i<MonthData.length;i++)//RETREIVES THE elements in month data
+        for(int i=1;i<MonthData.length;i++)
         	if(MonthData[i]>high) {
         		high=MonthData[i];
         		output=months[i];
@@ -117,16 +117,16 @@ return sum/MonthData.length;
     public static boolean addRainfallData() {
         Scanner sc= new Scanner (System.in);
         System.out.print("");
-        int dum=0;// FINDS STRING VALUE DUMMY VARIBLE
-        while (dum<12)// DOES THIS 12 TIMES {
+        int dum=0;
+        while (dum<12) {
         	System.out.print("Please enter the data gathered: (it must be integer values example:10)Starting with:" +months[dum]+"Press the key[x] to discontinue the program");
         	String F=sc.nextLine();
-        	if (F.equals("x"))// WHEN USER WANTS TO EXIT THE PROGRAM {
+        	if (F.equals("x")) {
         		sc.close();
         		return false;
         	}
         	else {
-        		MonthData[dum]=Integer.parseInt(F)// CONVERTS FIRST ARGUMENT INTO A STRING;
+        		MonthData[dum]=Integer.parseInt(F);
         	}
         	dum+=1;
         }
