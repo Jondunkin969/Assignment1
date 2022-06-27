@@ -7,11 +7,13 @@
  * Because our RainfallTracker will be used by another system, we must use the methods exactly as defined
  * 
  */
-package Rainfall;
+package assignment;
+
 
 import java.util.Scanner;
 
-public class RainfallSystem {
+public class RainfallTracker{
+ 
 	public static int MonthData [] = new int [12];//number entries
 	public static String[] months= {"January","February","March","April","May","June","July","August","September","October","November","December"};//strings of months
 
@@ -119,8 +121,8 @@ return sum/MonthData.length;
         System.out.print("");
         int dum=0;
         while (dum<12) {
-        	System.out.print("Please enter the data gathered: (it must be integer values example:10)Starting with:" +months[dum]+"Press the key[x] to discontinue the program");
-        	String F=sc.nextLine();
+       	System.out.print("Please enter the data gathered: (it must be integer values example:10)Starting with:" +months[dum]+"Press the key[x] to discontinue the program");
+        	String F=sc.nextLine();//user entry
         	if (F.equals("x")) {
         		sc.close();
         		return false;
